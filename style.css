@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.portfolio {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #101817;
+    padding: 50px;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    min-height: 450px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.small-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 10px 0 25px;
+}
+
+.description {
+    color: #c6c6c6;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ---------------- BOUTONS ---------------- */
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn,
+button {
+    background: #d5ff00;
+    color: #111;
+    padding: 13px 22px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social,
+.social-links a {
+    color: #d5ff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ---------------- SECTIONS ---------------- */
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+
+/* ---------------- PROJETS ---------------- */
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project img {
+    width: 45%;
+    background: white;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    color: #bdbdbd;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.details {
+    font-size: 13px;
+}
+
+.view {
+    display: inline-block;
+    color: #d5ff00;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* ---------------- À PROPOS ---------------- */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text p {
+    color: #c4c4c4;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------- COMPÉTENCES ---------------- */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list span {
+    border: 1px solid #777;
+    padding: 12px 20px;
+    color: #ddd;
+}
+
+
+/* ---------------- EXPÉRIENCE ---------------- */
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+    border-bottom: 1px solid #444;
+    padding: 25px 0;
+}
+
+.experience-item h3 {
+    font-size: 19px;
+}
+
+.experience-item span {
+    color: #aaa;
+}
+
+.experience-item p {
+    grid-column: 1 / 3;
+    color: #bbb;
+    line-height: 1.7;
+}
+
+
+/* ---------------- CONTACT ---------------- */
+
+.contact-content {
+    display: flex;
+    gap: 70px;
+}
+
+.contact-info,
+form {
+    width: 50%;
+}
+
+.contact-info p {
+    color: #bbb;
+    margin-bottom: 18px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    background: #1c2423;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+button {
+    width: 120px;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    border-top: 1px solid #444;
+    padding-top: 25px;
+    color: #777;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+
+    .portfolio {
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .hero,
+    .project,
+    .about-content,
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image,
+    .about-image,
+    .about-text,
+    .contact-info,
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .experience-item {
+        display: block;
+    }
+
+    .experience-item span {
+        display: block;
+        margin: 10px 0;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+    header{
+        height: 75px;
+        display: flex;
+        align-items: center;
+        padding: auto;
+    }
+    .logo{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    nav{
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+    }
+}
